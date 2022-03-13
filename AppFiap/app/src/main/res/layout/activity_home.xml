@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="@drawable/bg_fiap">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/tv_bemvindo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="O que deseja fazer, "
+            android:textColor="@color/white"
+            android:textSize="22dp"
+        />
+        <TextView
+            android:id="@+id/tv_bemvindo_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="8dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_estados"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LISTAR ESTADOS"
+        android:padding="16dp"
+        android:backgroundTint="@color/fiap_rosa"
+        android:layout_marginTop="16dp"
+        />
+    <Button
+        android:id="@+id/bt_contatos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LISTAR CONTATOS"
+        android:padding="16dp"
+        android:backgroundTint="@color/fiap_rosa"
+        />
+    <Button
+        android:id="@+id/bt_sair"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SAIR"
+        android:padding="16dp"
+        android:backgroundTint="@color/fiap_rosa"
+        />
+</LinearLayout>

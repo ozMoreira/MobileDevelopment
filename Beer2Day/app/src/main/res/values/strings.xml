@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Beer2Day</string>
+    <string name="procurar_cerveja">Procurar Cerveja!</string>
+    <string name="brands">Não há rótulos para indicar!</string>
+
+    <string-array name="rotulos">
+        <item>01 - Altbier</item>
+        <item>02 - American IPA</item>
+        <item>03 - American Lager</item>
+        <item>04 - Belgian Blond Ale</item>
+        <item>06 - Belgian Dubbel </item>
+        <item>07 - Belgian Golden Strong Ale</item>
+        <item>08 - Belgian Dark Strong Ale</item>
+        <item>09 - Belgian Pale Ale</item>
+        <item>10 - Belgian Tripel</item>
+        <item>11 - Bock</item>
+        <item>12 - English Barley Wine</item>
+        <item>13 - English Brown Ale</item>
+        <item>14 - English IPA</item>
+        <item>15 - English Pale Ale</item>
+        <item>16 - Fruit Beer</item>
+        <item>17 - Imperial IPA</item>
+        <item>18 - IPA</item>
+        <item>19 - Kölsch</item>
+        <item>20 - Lambic</item>
+        <item>21 - Munich Helles</item>
+        <item>22 - New England IPA</item>
+        <item>23 - Oktoberfest (Märzen)</item>
+        <item>24 - Pale Ale</item>
+        <item>25 - Pilsen</item>
+        <item>26 - Porter</item>
+        <item>27 - Rauchbier</item>
+        <item>28 - Saison </item>
+        <item>29 - Sour</item>
+        <item>30 - Stout</item>
+        <item>31 - Weiss</item>
+        <item>32 - Witbier</item>
+        <item>33 - Vienna Lager</item>
+    </string-array>
+</resources>

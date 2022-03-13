@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RecuperaActivity"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/bg_fiap"
+    android:gravity="center"
+    >
+
+    <TextView
+        android:id="@+id/tv_digite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Digtite seu email para recuperar sua senha:"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        />
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="E-mail"
+        android:background="#30ffffff"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:padding="16dp"
+        android:imeOptions="actionDone"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="16dp"
+        />
+
+    <Button
+        android:id="@+id/bt_enviar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_marginTop="16dp"
+        android:text="ENVIAR"
+        />
+
+    <Button
+        android:id="@+id/bt_voltar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="VOLTAR"
+        />
+
+</LinearLayout>
