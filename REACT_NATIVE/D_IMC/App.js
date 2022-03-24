@@ -14,11 +14,16 @@ export default class App extends React.Component{
     }
   }
 
+  limpaCampo = _=>{
+    
+  }
   calculaIMC = _ =>{
     const { peso } = this.state
     const { altura } = this.state
-    let p = parseFloat(peso)
-    let a = parseFloat(altura) / 100
+    let pStr = peso.toString();
+    let aStr = altura.toString()
+    let p = parseInt(pStr.replace(/[^0-9]/g, ""))/10
+    let a =  parseInt(aStr.replace(/[^0-9]/g, ""))/100 ///parseFloat(altura)/ 100
     let { imc } = 0
     if (!peso) {
       alert('Favor informar o peso')
@@ -58,22 +63,23 @@ export default class App extends React.Component{
               <Text style={[styles.texto, styles.textoGrande]}>Calcule o seu IMC:</Text>
               <Text style={[styles.texto, styles.textoPequeno]}>basta inserir os dados abaixo:</Text>
               <TextInput
-              onChangeText={peso => this.setState({peso})}
-              placeholder = "Peso"
-              placeholderTextColor="#808080"
-              keyboardType="numeric"
-              maxLength={5}
-              style={[styles.textInput, styles.textoPequeno, styles.textInputBig, styles.separadorCampos]}
-              />
+                onChangeText={peso => this.setState({peso})}
+                placeholder = "Peso (Ex: 70,0)"
+                placeholderTextColor="#808080"
+                keyboardType="numeric"
+                maxLength={5}
+                style={[styles.textInput, styles.textoPequeno, styles.textInputBig, styles.separadorCampos]}
+                />
 
               <TextInput
-              onChangeText={altura => this.setState({altura})}
-              placeholder = "Altura"
-              placeholderTextColor="#808080"
-              keyboardType="numeric"
-              maxLength={4}
-              style={[styles.textInput, styles.textoPequeno, styles.textInputSmall]}
-              />  
+                onChangeText={altura => this.setState({altura})}
+                placeholder = "Altura (Ex: 1,73)"
+                placeholderTextColor="#808080"
+                keyboardType="numeric"
+                onFocus={altura => this.setState({altura:''})}
+                maxLength={4}
+                style={[styles.textInput, styles.textoPequeno, styles.textInputSmall]}
+                />  
                 
               </View>
                <View
@@ -83,7 +89,6 @@ export default class App extends React.Component{
                   onPress={this.calculaIMC}
                   title={"CALCULAR"}
                   />
-        
             </View>
            
             <View style={styles.containter3}>
